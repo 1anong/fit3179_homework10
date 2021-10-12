@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+  </head>
+  <body>
+
+    <div class="idiom" id="choropleth_map"></div>
+    <div class="idiom" id="bar_chart"></div>
+
+    <script type="text/javascript">
+
+      vegaEmbed('#choropleth_map', "w9/georgia-population.vg.json").then(function(result) {  
+        // access vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+        
+      vegaEmbed('#bar_chart', "w10/georgia-tourism.vg.json").then(function(result) {  
+        // access vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+        
+    </script>
+
+  </body>
+</html>
