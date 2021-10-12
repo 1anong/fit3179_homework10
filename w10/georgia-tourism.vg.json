@@ -198,7 +198,7 @@
       "name": "color",
       "type": "ordinal",
       "domain": {"data": "data_0", "field": "Country Name", "sort": true},
-      "range": ["red"]
+      "range": ["#003b6f"]
     }
   ],
   "axes": [
